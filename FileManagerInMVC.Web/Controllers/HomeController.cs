@@ -8,10 +8,7 @@ namespace FileManagerInMVC.Web.Controllers
         public virtual ActionResult Index(string subFolder)
         {
             FileViewModel model = new FileViewModel { Folder = "Files", SubFolder = subFolder };
-
             return View(model);
         }
-
-
     }
 }

@@ -24,9 +24,7 @@ namespace FileManagerInMVC.Web.Controllers
             }
 
             driver.AddRoot(root);
-
             var connector = new Connector(driver);
-
             return connector.Process(HttpContext.Request);
         }
 
@@ -44,6 +42,5 @@ namespace FileManagerInMVC.Web.Controllers
 
             return Json(connector.GetFileByHash(target).FullName);
         }
-
     }
 }
