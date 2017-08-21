@@ -15,7 +15,8 @@ namespace FileManagerInMVC.Web.Controllers
             {
                 IsReadOnly = false,
                 Alias = "Root", 
-                MaxUploadSizeInMb = 500
+                MaxUploadSizeInMb = 500,
+                LockedFolders = new List<string>()
             };
 
             if (!string.IsNullOrEmpty(subFolder))
